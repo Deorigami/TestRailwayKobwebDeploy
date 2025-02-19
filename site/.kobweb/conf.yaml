@@ -1,0 +1,14 @@
+site:
+  title: "TestDeploy"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/test_deploy.js"
+      api: "build/libs/test_deploy.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/test_deploy.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
